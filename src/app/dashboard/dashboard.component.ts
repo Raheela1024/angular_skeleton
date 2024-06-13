@@ -6,23 +6,25 @@ import {MatInput} from "@angular/material/input";
 
 import {TableComponent} from "../shared/table/table.component";
 import {GridTableComponent} from "../shared/grid-table/grid-table.component";
+import {MatButton} from "@angular/material/button";
 
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [
-    MatCard,
-    MatFormField,
-    MatInput,
-    MatLabel,
-    TableComponent,
-    MatCardHeader,
-    MatCardActions,
-    MatCardTitle,
-    MatCardContent,
-    GridTableComponent
-  ],
+    imports: [
+        MatCard,
+        MatFormField,
+        MatInput,
+        MatLabel,
+        TableComponent,
+        MatCardHeader,
+        MatCardActions,
+        MatCardTitle,
+        MatCardContent,
+        GridTableComponent,
+        MatButton
+    ],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css'
 })
