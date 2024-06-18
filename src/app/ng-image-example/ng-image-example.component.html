@@ -1,17 +1,38 @@
-<!--<article>-->
-<!--    <img-->
-<!--            alt="Optimized Unsplash Image"-->
-<!--            ngSrc="0*hiSjMcbdqbV35wRI"-->
-<!--            sizes="(max-width: 400px) 100vw, (max-width: 1200px) 50vw, 100vw"-->
-<!--            width="600"-->
-<!--            height="400"-->
-<!--            decoding="sync"-->
-<!--            priority-->
-<!--    />-->
 
-<!--</article>-->
-<!--<img src="https://picsum.photos/seed/picsum/200/300" width="400" height="200"   alt="without ng iamge directive" priority/>-->
-<!--<br>-->
-<!--<img src="https://picsum.photos/200/300?random=1"  alt="without ng iamge directive 1">-->
-<!--<br>-->
-<!--<img src="https://picsum.photos/200/300?random=2"  alt="without ng iamge directive 2 ">-->
+<div class=".container">
+    <article>
+    <img
+            alt="Optimized Unsplash Image"
+            ngSrc="0*hiSjMcbdqbV35wRI"
+            sizes="(max-width: 400px) 100vw, (max-width: 1200px) 50vw, 100vw"
+            width="600"
+            height="400"
+            decoding="sync"
+            priority
+
+    />
+
+</article>
+<img src="https://picsum.photos/seed/picsum/200/300" width="400" height="200"   alt="without ng iamge directive" priority/>
+<br>
+
+<br>
+<img src="https://picsum.photos/200/300?random=2"  alt="without ng iamge directive 2 ">
+</div>
+<!--&lt;!&ndash; old way &ndash;&gt;-->
+<!--<div *ngIf="user">{{ user.name }}</div>-->
+
+<!--&lt;!&ndash; new way &ndash;&gt;-->
+<!--@if(user) {-->
+<!--    <div>{{ user.name }}</div>-->
+<!--}-->
+
+<!--@defer(when user.name === 'Angular') {-->
+<!--    <app-angular-details />-->
+<!--}@placeholder {-->
+<!--    <div>displayed until user.name is not equal to Angular</div>-->
+<!--}@loading(after: 100ms; minimum 1s) {-->
+<!--    <app-loader />-->
+<!--}@error {-->
+<!--    <app-error />-->
+<!--}-->

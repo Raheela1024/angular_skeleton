@@ -1,0 +1,15 @@
+.container {
+    text-align: right; /* Aligns content to the right within the container */
+    padding: 20px; /* Adds padding for visual clarity */
+}
+
+.right-button {
+    /* Optional styles for the button */
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-right: 10px; /* Adds margin space between the buttons */
+
+}
+
+
+

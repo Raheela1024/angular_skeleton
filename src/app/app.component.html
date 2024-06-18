@@ -1,4 +1,17 @@
 <app-header></app-header>
-<button mat-raised-button color="primary" style="align-content: center">NgOptimizedImage</button>
+
+@if(showDeferredComponent){
+    <ng-container *ngComponentOutlet="deferredComponent"></ng-container>
+}
+<div class="container">
+    <button class="right-button" mat-raised-button color="primary" (click)="loadDeferredComponent()">Load Deferred Component</button>
+    <button class="right-button" mat-raised-button color="green"  (click)="fetchData()">Fetch Data and Load Deferred Component</button>
+    <button class="right-button" mat-raised-button color="primary"  (click)="navigateToOther()">Image Optimization</button>
+
+</div>
+
 <br>
+
+
+
 <router-outlet />
